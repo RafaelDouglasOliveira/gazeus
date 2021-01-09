@@ -7,5 +7,4 @@ interface CustomKoinComponent : KoinComponent {
 
     override fun getKoin(): Koin = KoinInstance.KoinContext.koinApplication.koin
 
-
 }

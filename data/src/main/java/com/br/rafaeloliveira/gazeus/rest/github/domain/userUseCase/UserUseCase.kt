@@ -27,6 +27,7 @@ class UserUseCase(private val userRepository: UserRepository,
             }) {
                 is SafeResponse.Success -> callback(true, response.value)
                 is SafeResponse.NetworkError -> callback(false, null)
+                is SafeResponse.GenericError -> callback(false, null)
             }
         }
     }
