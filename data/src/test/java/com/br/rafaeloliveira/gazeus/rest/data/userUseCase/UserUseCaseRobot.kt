@@ -1,5 +1,6 @@
 package com.br.rafaeloliveira.gazeus.rest.data.userUseCase
 
+import com.br.rafaeloliveira.gazeus.rest.github.data.remote.userModels.Owner
 import com.br.rafaeloliveira.gazeus.rest.github.data.remote.userModels.Repos
 import com.br.rafaeloliveira.gazeus.rest.github.data.repository.UserRepository
 import com.br.rafaeloliveira.gazeus.rest.github.domain.userUseCase.UserUseCase
@@ -30,7 +31,8 @@ class UserUseCaseRobot {
         nodeId = "",
         fullName = "",
         name = "",
-        private = false
+        private = false,
+        owner  = Owner("teste")
     )
 
     private val listRepos = listOf(reposUser)
