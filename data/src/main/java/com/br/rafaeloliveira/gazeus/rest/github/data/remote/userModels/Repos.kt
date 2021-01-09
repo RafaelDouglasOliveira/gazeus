@@ -12,5 +12,12 @@ data class Repos(
     @SerializedName("node_id") val nodeId : String,
     @SerializedName("name") val name : String,
     @SerializedName("full_name") val fullName : String,
-    @SerializedName("private") val private : Boolean
+    @SerializedName("private") val private : Boolean,
+    @SerializedName("owner") val owner : Owner
 ) : Parcelable
+
+@Keep
+@Parcelize
+data class Owner(
+    @SerializedName("login") val login : String
+): Parcelable

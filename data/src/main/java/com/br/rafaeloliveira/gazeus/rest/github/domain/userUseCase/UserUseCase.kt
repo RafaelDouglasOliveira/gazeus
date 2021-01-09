@@ -14,7 +14,6 @@ class UserUseCase(private val userRepository: UserRepository,
                    dispatcher: CoroutineContext = Dispatchers.IO + SupervisorJob()
                   ) {
 
-
     private var coroutinesScope = CoroutineScope(dispatcher)
 
     fun getRepositoryUser(nameUse : String,
