@@ -47,18 +47,18 @@ ________________________________________________________________________________
 
 Para pesquisar repositórios publicos por nome: 
 
-coreProvider.getRepositoryUserName(nameUser : String, callback: (Boolean, List<Repos>?) -> Unit)
-o callback o Boolean do callback retorna true em caso de sucesso e false caso apresente erro
+        coreProvider.getRepositoryUserName(nameUser : String, callback: (Boolean, List<Repos>?) -> Unit)
+        o callback o Boolean do callback retorna true em caso de sucesso e false caso apresente erro
 
 _____________________________________________________________________________________________________________
 
 Para pesquisar tags de um determinadno repósitorio:
 
-coreProvider.getTagOwnerRepo(owner: String,
-                        repo : String,
-                        callBack: (success: Boolean, data: List<TagRepo>?)
+        coreProvider.getTagOwnerRepo(owner: String,
+                                repo : String,
+                                callBack: (success: Boolean, data: List<TagRepo>?)
 
-o callback o Boolean do callback retorna true em caso de sucesso e false caso apresente erro
+        o callback o Boolean do callback retorna true em caso de sucesso e false caso apresente erro
 
 _____________________________________________________________________________________________________________
 
