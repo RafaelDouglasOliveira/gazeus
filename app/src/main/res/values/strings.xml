@@ -5,4 +5,6 @@
     <string name="text_name">Nome :</string>
     <string name="text_full_name">Nome Completo: </string>
     <string name="text_owner">Proprietário: </string>
+    <string name="search_title">Pesquisar</string>
+    <string name="text_not_repo_name_user">Não localizmos repositorios para este nome</string>
 </resources>

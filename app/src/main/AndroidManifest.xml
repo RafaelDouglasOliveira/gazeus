@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestGitHub">
 
-        <activity android:name=".MainActivity"
+        <activity android:name=".home.view.MainActivity"
             android:screenOrientation="portrait">
 
             <intent-filter>

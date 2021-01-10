@@ -10,7 +10,7 @@ import org.koin.dsl.koinApplication
 fun InitProvider.startKoinCore() {
     KoinInstance.KoinContext.koinApplication = koinApplication {
         androidContext(getAppContext())
-        val modules = listOf(DataModule.loadDataModule() , DomainModule.loadDomainModule())
-        modules(modules)
+        val listModules = listOf(DataModule.loadDataModule() , DomainModule.loadDomainModule())
+        modules(listModules)
     }
 }

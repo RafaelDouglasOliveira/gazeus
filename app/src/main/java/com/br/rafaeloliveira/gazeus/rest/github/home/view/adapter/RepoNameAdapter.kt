@@ -1,4 +1,4 @@
-package com.br.rafaeloliveira.gazeus.rest.github.adapter.Adapter
+package com.br.rafaeloliveira.gazeus.rest.github.home.view.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,11 +8,12 @@ import com.br.rafaeloliveira.gazeus.rest.github.R
 import com.br.rafaeloliveira.gazeus.rest.github.data.remote.userModels.Repos
 import kotlinx.android.synthetic.main.item_repo_user.view.*
 
-class RepoNameAdapter(val items : MutableList<Repos>?) : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+class RepoNameAdapter(private val items : MutableList<Repos>? ,
 
-    internal var onRepoClickListener: OnRepoClickListener? = null
+                      private val onRepoClickListener: OnRepoClickListener) : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
-    inner class ViewHolderRepo(val view : View) : RecyclerView.ViewHolder(view) {
+
+    inner class ViewHolderRepo(view : View) : RecyclerView.ViewHolder(view) {
 
         fun bindRepo(repos: Repos) {
 
@@ -23,7 +24,7 @@ class RepoNameAdapter(val items : MutableList<Repos>?) : RecyclerView.Adapter<Re
             itemView.txtValueOwner.text = repos.owner.login
 
             itemView.setOnClickListener {
-                onRepoClickListener?.onClickItemRepo(repos)
+                onRepoClickListener.onClickItemRepo(repos)
             }
 
         }
