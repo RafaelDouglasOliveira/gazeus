@@ -1,7 +1,47 @@
 # gazeus
 Lib para usar as chamadas do repósitorio do gitHub
 
-E utilizado o koin para injeção de dependencia devendo ser inicializado
+
+Para importa a lib versão atual 0.0.1
+
+gradle 
+
+    Adicione-o em seu build.gradle raiz no final dos repositórios:
+
+    allprojects {
+        repositories {
+          ...
+          maven { url 'https://jitpack.io' }
+        }
+      }
+
+
+    Adicione a dependência
+
+    dependencies {
+              implementation 'com.github.RafaelDouglasOliveira:gazeus:Tag'
+    }
+maven
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+      </repositories>
+      
+      Adicione a dependência
+      
+      dependency>
+        <groupId>com.github.RafaelDouglasOliveira</groupId>
+        <artifactId>gazeus</artifactId>
+        <version>Tag</version>
+      </dependency>
+
+      
+_____________________________________________________________________________________________________________
+
+E utilizado o koin para injeção de dependencia devendo ser inicializado no app principal
 
 _____________________________________________________________________________________________________________
 
