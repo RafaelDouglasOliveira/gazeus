@@ -1,8 +1,9 @@
 # gazeus
 Lib para usar as chamadas do repósitorio do gitHub
 
+Versão 0.0.1
 
-Para importa a lib versão atual 0.0.1
+Para importa a lib 
 
 gradle 
 
