@@ -1,11 +1,11 @@
 # gazeus
-Lib para usar as chamadas do repósitorio do gitHub
+    Lib para usar as chamadas do repósitorio do gitHub
 
-Versão 0.0.1
+    Versão 0.0.1
 
-Para importa a lib 
+    Para importa a lib 
 
-gradle 
+    gradle 
 
     Adicione-o em seu build.gradle raiz no final dos repositórios:
 
@@ -22,7 +22,8 @@ gradle
     dependencies {
               implementation 'com.github.RafaelDouglasOliveira:gazeus:Tag'
     }
-maven
+    
+    maven
 
     <repositories>
         <repository>
@@ -42,18 +43,25 @@ maven
       
 _____________________________________________________________________________________________________________
 
-E utilizado o koin para injeção de dependencia devendo ser inicializado no app principal
+    E utilizado o koin para injeção de dependencia devendo ser inicializado no app principal
 
 _____________________________________________________________________________________________________________
 
-Para pesquisar repositórios publicos por nome: 
+    Iniciar a dependencia
+
+        val coreProvider = CoreProvider()
+        
+_____________________________________________________________________________________________________________
+        
+
+    Para pesquisar repositórios publicos por nome: 
 
         coreProvider.getRepositoryUserName(nameUser : String, callback: (Boolean, List<Repos>?) -> Unit)
         o callback o Boolean do callback retorna true em caso de sucesso e false caso apresente erro
 
 _____________________________________________________________________________________________________________
 
-Para pesquisar tags de um determinadno repósitorio:
+    Para pesquisar tags de um determinadno repósitorio:
 
         coreProvider.getTagOwnerRepo(owner: String,
                                 repo : String,
