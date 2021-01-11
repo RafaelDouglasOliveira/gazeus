@@ -44,6 +44,14 @@
 _____________________________________________________________________________________________________________
 
     E utilizado o koin para injeção de dependencia devendo ser inicializado no app principal
+    
+            startKoin {
+                    androidContext(applicationContext)
+                    modules(module {
+                        factory {  }
+                    }) 
+            }
+            
 
 _____________________________________________________________________________________________________________
 
